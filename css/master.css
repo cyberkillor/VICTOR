@@ -3,6 +3,10 @@ body{
     background-size: 100% 100%;*/
     background: #edeef0;
 }
+@font-face {
+    font-family: Sad;
+    src: url("Sad.ttf");
+}
 * {
     margin: 0;
     box-sizing: border-box;
@@ -14,6 +18,7 @@ html{
 }
 .picture{
     /*align-content: center;*/
+
     display: flex;
     justify-content: center;
     align-content: center;
@@ -31,7 +36,7 @@ html{
 .container1 {
     width: 80%;
     margin: 30px auto;
-    background-color: #fff;
+    background: linear-gradient(160deg, cornflowerblue, white, white,  white);
     padding: 30px;
     border-radius: 10px;
 
@@ -40,11 +45,30 @@ html{
     column-rule: 4px dotted #edeef0;
 }
 .container2 {
+    position: absolute;
     width: 80%;
-    margin: 30px auto;
-    background-color: #fff;
+    height: auto;
+
+    left:0; right:0;
+    margin:auto;
+
+    background: linear-gradient(160deg, lightslategrey, white, white, white);
     padding: 30px;
+    padding-right: 10px;
     border-radius: 10px;
+    align-items: center;
+}
+#b1{
+    display: table-cell;
+    width: 61%;
+    height: 100%;
+    margin: 0;
+}
+#b2{
+    display: table-cell;
+    width: 38%;
+    padding-left: 5px;
+    height: 100%;
 }
 @keyframes anima1 {
     0%{opacity: 0}
@@ -59,8 +83,9 @@ h1{
 
 h2{
     /*animation: anima1 5s infinite;*/
+
     color: black;
-    text-align: left;
+    text-align: center;
 }
 a{
     display: inline-block;
@@ -72,12 +97,44 @@ a{
 a:hover{
     color: gray;
 }
+
 div hr{
-    width: 90%;
+    width: 100%;
 }
 .ur1{
     padding-left: 3%;
 }
 ul ul{
     padding-left: 6%;
+}
+
+#introduction{
+    font-family: Sad;
+}
+
+.title{
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    border-radius:70%;
+    background: radial-gradient(darkgrey, white 70%, white);
+    font-size: x-large;
+    text-align: center;
+    font-family: Sad;
+}
+.line1{
+    background: linear-gradient(45deg, transparent 49.5%, #edeef0 49.5%, white 50.5%, transparent 50.5%);
+    width: 100%;
+    height: 150px;
+}
+
+.line2{
+    background: linear-gradient(-45deg, transparent 49.5%, #edeef0 49.5%, white 50.5%, transparent 50.5%);
+    width: 100%;
+    height: 100px;
+}
+#en_name{
+    animation-name: anima1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
